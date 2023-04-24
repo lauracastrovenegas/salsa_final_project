@@ -2,7 +2,25 @@ import styled from "styled-components";
 import map from './assets/map.png'
 import theme from "./theme";
 import HeaderBlock from "./components/HeaderBlock";
-import down from './assets/down.svg'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
+import PinContainer from "./components/PinContainer";
+
+function App() {
+  return (
+    <Wrapper>
+      <BackgroundImage>
+        <HeaderBlock/>
+        <DownArrow>
+          <FontAwesomeIcon icon={faChevronDown}/>
+          <PinContainer/>
+        </DownArrow>
+      </BackgroundImage>
+    </Wrapper>
+  );
+}
+
+export default App;
 
 const Wrapper = styled.div`
   height: 200vh;
@@ -21,32 +39,11 @@ const BackgroundImage = styled.div`
 `
 
 const DownArrow = styled.div`
-  height: 3rem;
   display: flex;
-  
-  img {
-    height: 100%;
-    object-fit: contain;
-    margin: 0rem auto;
-  }
 
   svg {
-    color: "#FFFFFF";
+    color: #FFFFFF;
+    margin: 0rem auto;
+    font-size: 5rem;
   }
 `
-
-
-function App() {
-  return (
-    <Wrapper>
-      <BackgroundImage>
-        <HeaderBlock/>
-        <DownArrow>
-          <img src={down} alt="down arrow"/>
-        </DownArrow>
-      </BackgroundImage>
-    </Wrapper>
-  );
-}
-
-export default App;
