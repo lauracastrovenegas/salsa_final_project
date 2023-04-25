@@ -13,8 +13,8 @@ function App() {
         <HeaderBlock/>
         <DownArrow>
           <FontAwesomeIcon icon={faChevronDown}/>
-          <PinContainer/>
         </DownArrow>
+        <PinContainer/>
       </BackgroundImage>
     </Wrapper>
   );
@@ -23,8 +23,9 @@ function App() {
 export default App;
 
 const Wrapper = styled.div`
-  height: 200vh;
+  height: fit-content;
   background-color: ${theme.colors.blue};
+  height: 190vh;
 `
 
 const BackgroundImage = styled.div`
@@ -33,13 +34,15 @@ const BackgroundImage = styled.div`
   padding-top: 4rem;
   height: 100%;
   width: 100%;
-  background-position: top left;
-  background-size: contain;
+  background-position: top center;
+  background-size: cover;
   background-repeat: no-repeat;
 `
 
 const DownArrow = styled.div`
   display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
 
   svg {
     color: #FFFFFF;
