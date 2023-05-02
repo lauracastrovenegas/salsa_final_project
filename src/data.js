@@ -46,7 +46,7 @@ const data = [
     {
         location: "Cuba",
         title: "Abuela's Flan Recipe",
-        text: ["Gladys Pandiello (born and raised in Cuba) was well known for her superior flan recipe, and passed it down to her family and close friends before passing away in 2021. Flan is a very popular dessert in many Latin American countries, and after many years of practice, Gladys’s flan surpassed all others in taste and texture. In her interview, Gladys’s granddaughter Alexandra Quintana recalled her vivid memories of going to her abuela’s house where music was always playing from the radio and food was always readily served. In memory of her, we include her flan recipe here. En paz descance Doña Gladys."],
+        text: ["Gladys Pandiello (born and raised in Cuba) was well known for her superior flan recipe, and passed it down to her family and close friends before passing away in 2021. Flan is a very popular dessert in many Latin American countries, and after many years of practice, Gladys’s flan surpassed all others in taste and texture. In her interview, Gladys’s granddaughter Alexandra Quintana recalled her vivid memories of going to her abuela’s house where music was always playing from the radio and food was always readily served. In memory of her, we include her flan recipe here.","En paz descanse Doña Gladys."],
         image: recipe,
     },
     {
