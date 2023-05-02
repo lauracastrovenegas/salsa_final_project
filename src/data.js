@@ -10,7 +10,7 @@ const data = [
         location: "Miami, FL",
         title: "Salsa, the Dance",
         videoURL: "https://www.youtube.com/embed/arOvJO7H_SQ",
-        text: ["This solidworks animation shows the basic steps of salsa. Salsa dancing varies by region, and more experienced dancers add spins, twists, and more complex footwork while subtly communicating non-verbally with their partners. Although salsa originated in Cuba, it spread like wildfire throughout Latin America and the United states, becoming very popular in south Florida as the Cuban population there quickly grew."]
+        text: ["This solidworks animation shows the basic steps of salsa. Salsa dancing varies by region, and more experienced dancers add spins, twists, and more complex footwork while subtly communicating non-verbally with their partners. Although salsa originated in Cuba, it spread like wildfire throughout Latin America and the United states, becoming very popular in South Florida as the Cuban population there quickly grew."]
     },
     {
         location: "Midtown, NY",
@@ -63,7 +63,7 @@ const data = [
     {
         location: "Mayaguez, Puerto Rico",
         title: "Bomba",
-        image: bomba_instruments,
+        videoURL: "https://www.youtube.com/embed/JHEc7vVHJYw",
         text: ["Bomba is a style of music and dance that originated in and is emblematic of Puerto Rico. The practice formed as a result of West African enslaved people – who could trace their heritage to the Ashanti people of Ghana – who worked in sugar plantations along the western coast during the colonial period. The genre was a soundtrack to feelings of sadness, anger, and resistance in dance gatherings called Bailes de Bomba. These gatherings often served as ceremonies or even to plan rebellions.","A larger drum called a buleador served to keep the steady beat. A high-pitched rum, or subidor, was responsible for improvising above the large drum and marking the movements of dancers, putting them in conversation with the instruments. The cuá and maraca added additional rhythmic layers. Dancers challenge the subidor with paseos (promenades) and piquetes (accents), the improvised steps. The style encompasses more than 16 rhythmic styles with influence from African, European, French creole, and neighboring Caribbean origins.","Now, bomba is often used both on the island and in the U.S. to condemn racism. Puerto Rican artist Maria Isa wrote “Como Duele” to honor George Floyd’s life, representative of the significance of bomba during the height of the Black Lives Matter movement."]
     },
     {

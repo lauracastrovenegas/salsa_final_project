@@ -56,12 +56,13 @@ const TextContainer = styled.div`
 `
 
 const Video = styled.div`
-    width: 80%;
+    width: ${props => props.width};
     margin: auto auto;
 `
 
 const Image = styled.div`
-
+    width: ${props => props.width};
+    margin: 0rem auto;
 
     img {
         width: 100%;
@@ -75,8 +76,6 @@ const ImageTextContainer = styled.div`
 `
 
 const Popup = ({ item, setItemSelected }) => {
-    console.log(item)
-    //console.log(data[item.index - 1])
     return (
         item ?
             <PopupWrapper aria-hidden={item} role="dialog" tabindex={item ? 0 : -1} onClick={() => setItemSelected(null)}>
@@ -89,9 +88,9 @@ const Popup = ({ item, setItemSelected }) => {
                     
                     {data[item.index - 1].videoURL || data[item.index - 1].image || data[item.index - 1].text ?
                     <ImageTextContainer>
-                        {data[item.index - 1].videoURL ? <Video><YoutubeEmbed videoLink={data[item.index - 1].videoURL} /></Video> : null}
+                        {data[item.index - 1].videoURL ? <Video width={data[item.index - 1].text ? "80%" : "100%"}><YoutubeEmbed videoLink={data[item.index - 1].videoURL} /></Video> : null}
 
-                        {data[item.index - 1].image ? <Image><img src={data[item.index - 1].image} alt="" /></Image> : null}
+                        {data[item.index - 1].image ? <Image width={data[item.index - 1].text ? "80%" : "100%"}><img src={data[item.index - 1].image} alt="" /></Image> : null}
 
                         {data[item.index - 1].text ?
                             <TextContainer>
@@ -106,7 +105,7 @@ const Popup = ({ item, setItemSelected }) => {
                         <ImageTextContainer>
                             {data[item.index - 1].image_texts.map((image) => (
                                 <div>
-                                    <Image><img src={image.image} alt="" /></Image>
+                                    <Image width={"80%"}><img src={image.image} alt="" /></Image>
                                     <Text>{image.text}</Text>
                                 </div>
                             ))}
