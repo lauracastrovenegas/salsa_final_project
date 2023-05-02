@@ -74,6 +74,7 @@ const Pin = styled.div`
     top: ${props => props.top}px;
     left: ${props => props.left}px;
     display: flex;
+    flex-direction: column;
 
     p {
         display: none;
@@ -83,16 +84,17 @@ const Pin = styled.div`
         background-color: white;
         border-radius: 15px;
         padding: 0.75rem 1.75rem;
-        margin-left: 0.5rem;
+        margin: 0rem 0rem 0.5rem 0rem;
+        z-index: 1;
     }
 
     img {
         height: 3rem;
         object-fit: contain;
-    }
+        width: fit-content;
+        margin-right: auto;
 
-    :hover {
-        p {
+        :hover + p {
             display: block;
         }
     }

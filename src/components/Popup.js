@@ -57,7 +57,7 @@ const Popup = ({ item, setItemSelected}) => {
             <PopupWrapper aria-hidden={item} role="dialog" tabindex={item ? 0 : -1} onClick={() => setItemSelected(null)}>
                 <PopupContainer onClick={e => e.stopPropagation()}>
                     <Close><FontAwesomeIcon icon={faX} onClick={() => setItemSelected(null)}/></Close>
-                    {item.location ? <Title>{item.location}</Title> : null}
+                    {item.location ? <Title>{item.title}</Title> : null}
                     {item.text ? <Text>{item.text}</Text> : null}
                     {item.videoLink ? <Video><YoutubeEmbed videoLink={item.videoLink} /></Video> : null}
                 </PopupContainer>
