@@ -87,6 +87,7 @@ const Popup = ({ item, setItemSelected }) => {
 
                     {data[item.index - 1].embed ? data[item.index - 1].embed : null}
                     
+                    {data[item.index - 1].videoURL || data[item.index - 1].image || data[item.index - 1].text ?
                     <ImageTextContainer>
                         {data[item.index - 1].videoURL ? <Video><YoutubeEmbed videoLink={data[item.index - 1].videoURL} /></Video> : null}
 
@@ -99,7 +100,7 @@ const Popup = ({ item, setItemSelected }) => {
                                 ))}
                             </TextContainer>
                             : null}
-                    </ImageTextContainer>
+                    </ImageTextContainer> : null}
 
                     {data[item.index - 1].image_texts ?
                         <ImageTextContainer>
