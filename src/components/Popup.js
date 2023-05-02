@@ -61,8 +61,7 @@ const Video = styled.div`
 `
 
 const Image = styled.div`
-    width: 80%;
-    margin: 0rem auto;
+
 
     img {
         width: 100%;
